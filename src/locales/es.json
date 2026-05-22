@@ -1,0 +1,43 @@
+{
+  "navbar": {
+    "home": "Inicio",
+    "about": "Sobre mí",
+    "projects": "Proyectos",
+    "experience": "Experiencia",
+    "testimonials": "Testimonios",
+    "contact": "Contacto"
+  },
+  "hero": {
+    "title": "Hola, soy Leonardo Mosquera",
+    "subtitle1": "Ingeniero de Software",
+    "websolutions": "Desarrollo soluciones web seguras y eficientes",
+    "secure": "Seguro",
+    "modern": "Moderno",
+    "scalable": "Escalable",
+    "websolutions": "soluciones web seguras y eficientes",
+    "mobile1": "Construyendo",
+    "mobile2": "Aplicaciones Web"
+  },
+  "projects": {
+    "title": "Mis Proyectos Seleccionados"
+  },
+  "contact": {
+    "title": "Hablemos",
+    "desc": "Ya sea que busques crear un nuevo sitio web, mejorar tu plataforma actual o dar vida a un proyecto único, estoy aquí para ayudarte.",
+    "name": "Nombre Completo",
+    "email": "Correo Electrónico",
+    "message": "Mensaje",
+    "placeholderName": "Juan Pérez",
+    "placeholderEmail": "JuanPerez@email.com",
+    "placeholderMessage": "Comparte tus ideas...",
+    "send": "Enviar",
+    "sending": "Enviando...",
+    "success": "¡Tu mensaje ha sido enviado!",
+    "error": "¡Algo salió mal!"
+  },
+  "footer": {
+    "terms": "Términos y Condiciones",
+    "privacy": "Política de Privacidad",
+    "copyright": "© 2026 Leomos. Todos los derechos reservados."
+  }
+}

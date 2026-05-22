@@ -1,0 +1,43 @@
+{
+  "navbar": {
+    "home": "Home",
+    "about": "About",
+    "projects": "Projects",
+    "experience": "Experience",
+    "testimonials": "Testimonials",
+    "contact": "Contact"
+  },
+  "hero": {
+    "title": "Hi I'm Leonardo",
+    "subtitle1": "A Developer",
+    "subtitle2": "Dedicated to Crafting",
+    "secure": "Secure",
+    "modern": "Modern",
+    "scalable": "Scalable",
+    "websolutions": "Web Solutions",
+    "mobile1": "Building",
+    "mobile2": "Web Applications"
+  },
+  "projects": {
+    "title": "My Selected Projects"
+  },
+  "contact": {
+    "title": "Let's Talk",
+    "desc": "Whether you're looking to build a new website, improve your existing platform, or bring a unique project to life, I'm here to help.",
+    "name": "Full Name",
+    "email": "Email",
+    "message": "Message",
+    "placeholderName": "John Doe",
+    "placeholderEmail": "JohnDoe@email.com",
+    "placeholderMessage": "Share your thoughts...",
+    "send": "Send",
+    "sending": "Sending...",
+    "success": "Your message has been sent!",
+    "error": "Something went wrong!"
+  },
+  "footer": {
+    "terms": "Terms & Conditions",
+    "privacy": "Privacy Policy",
+    "copyright": "© 2026 Leomos. All rights reserved."
+  }
+}
