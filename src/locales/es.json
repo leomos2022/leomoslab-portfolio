@@ -37,6 +37,34 @@
     "readMore": "Ver más",
     "viewProject": "Ver Proyecto"
   },
+  "experience": {
+    "title": "Mi Experiencia Laboral",
+    "jobs": [
+      {
+        "title": "Desarrollador Gráfico y Web",
+        "job": "Finotex · Bogotá, CO, Colombia",
+        "date": "Feb 2017 - Nov 2022",
+        "contents": [
+          "Gestioné toda la comunicación digital y visual de la marca, incluyendo contenido web, gráficos para redes sociales y material promocional.",
+          "Diseñé y mantuve la identidad visual de la marca en todos los canales digitales y físicos.",
+          "Realicé actualizaciones básicas de contenido web y gestión de sitios, mejorando el engagement en línea.",
+          "Desarrollé habilidades de gestión de proyectos, presupuestación y atención al cliente al liderar todos los aspectos de un negocio independiente."
+        ]
+      },
+      {
+        "title": "Desarrollador de Software Independiente y Consultor Digital",
+        "job": "Independiente · Bogotá, CO, Colombia",
+        "date": "Jun 2023 - Presente",
+        "contents": [
+          "Diseño y desarrollo sitios web y aplicaciones web responsivas para pequeñas empresas y clientes independientes.",
+          "Gestiono el ciclo completo del proyecto: relevamiento de requisitos, diseño UI/UX, desarrollo, despliegue y mantenimiento.",
+          "Construyo soluciones personalizadas usando HTML, CSS, JavaScript, Node.js y Python.",
+          "Brindo consultoría digital en branding, SEO y mejora de presencia en línea.",
+          "Colaboro de forma remota con clientes para entender sus necesidades y entregar soluciones digitales a medida."
+        ]
+      }
+    ]
+  },
   "contact": {
     "title": "Hablemos",
     "desc": "Ya sea que busques crear un nuevo sitio web, mejorar tu plataforma actual o dar vida a un proyecto único, estoy aquí para ayudarte.",

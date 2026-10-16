@@ -37,6 +37,34 @@
     "readMore": "Read More",
     "viewProject": "View Project"
   },
+  "experience": {
+    "title": "My Work Experience",
+    "jobs": [
+      {
+        "title": "Graphic and Web Developer",
+        "job": "Finotex · Bogotá, CO, Colombia",
+        "date": "Feb 2017 - Nov 2022",
+        "contents": [
+          "Managed all digital and visual communication for the brand, including website content, social media graphics, and promotional materials.",
+          "Designed and maintained the brand's visual identity across digital and physical touchpoints.",
+          "Handled basic web updates and content management, improving online engagement.",
+          "Developed project management, budgeting, and client-facing skills by running all aspects of a small business."
+        ]
+      },
+      {
+        "title": "Independent Software Developer & Digital Consultant",
+        "job": "Self-employed · Bogotá, CO, Colombia",
+        "date": "Jun 2023 - Present",
+        "contents": [
+          "Design and develop responsive websites and web applications for small businesses and independent clients.",
+          "Manage the full project lifecycle: requirements gathering, UI/UX design, development, deployment, and maintenance.",
+          "Build custom solutions using HTML, CSS, JavaScript, Node.js, and Python.",
+          "Provide digital consulting on branding, SEO, and online presence improvement.",
+          "Collaborate remotely with clients to understand their needs and deliver tailored digital solutions."
+        ]
+      }
+    ]
+  },
   "contact": {
     "title": "Let's Talk",
     "desc": "Whether you're looking to build a new website, improve your existing platform, or bring a unique project to life, I'm here to help.",
