@@ -1,12 +1,15 @@
 import { motion } from "motion/react";
 const ProjectDetails = ({
   title,
+  subtitle,
   description,
   subDescription,
   image,
   tags,
   href,
   closeModal,
+  titleColor = "text-white",
+  subtitleColor = "text-sand",
 }) => {
   const hasProjectLink = Boolean(href);
 
@@ -23,9 +26,12 @@ const ProjectDetails = ({
         >
           <img src="assets/close.svg" className="w-6 h-6" />
         </button>
-        <img src={image} alt={title} className="w-full rounded-t-2xl" />
+        <img src={image} alt={title} className="w-full h-72 object-cover rounded-t-2xl" />
         <div className="p-5">
-          <h5 className="mb-2 text-2xl font-bold text-white">{title}</h5>
+          <h5 className={`mb-1 text-2xl font-bold ${titleColor}`}>{title}</h5>
+          {subtitle && (
+            <h6 className={`mb-2 text-xl font-semibold ${subtitleColor}`}>{subtitle}</h6>
+          )}
           <p className="mb-3 font-normal text-neutral-400">{description}</p>
           {subDescription.map((subDesc, index) => (
             <p className="mb-3 font-normal text-neutral-400">{subDesc}</p>

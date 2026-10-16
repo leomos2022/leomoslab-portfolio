@@ -1,44 +1,186 @@
 export const myProjects = [
   {
     id: 1,
-    title: "E-commerce Platform",
+    category: "mobileApps",
+    title: "SuscriPago",
     description:
-      "Facilitates purchases from international websites like Amazon and eBay, allowing customers to shop from these sites and have products delivered domestically.",
+      "SuscriPago es una aplicación móvil gratuita que centraliza todas tus suscripciones digitales en un solo lugar. Te avisa antes de cada cobro, te muestra estadísticas de tus gastos y te da recomendaciones para ahorrar.",
     subDescription: [
-      "Built a scalable application with ASP.NET Core MVC, integrating global platforms like Amazon for domestic delivery.",
-      "Implemented secure authentication and database management using ASP.NET Core Identity and Entity Framework Core.",
-      "Designed a responsive frontend with Tailwind CSS, enhancing user experience.",
-      "Added payment systems, localization, and product filtering for functionality improvements.",
+      "Desarrollada con React Native y Expo, disponible en la App Store para iOS y próximamente en Google Play para Android.",
+      "Implementa alertas de cobro antes de cada renovación y un dashboard con estadísticas de gasto por suscripción.",
+      "Usa Supabase como backend para autenticación y almacenamiento de datos en tiempo real.",
     ],
-    href: "",
+    href: "https://apps.apple.com/us/app/suscripago/id6774407144",
     logo: "",
-    image: "/assets/projects/accessories.jpg",
+    image: "/assets/projects/suscripago.jpg",
     tags: [
       {
         id: 1,
-        name: "C#",
-        path: "/assets/logos/csharp.svg",
+        name: "React Native",
+        path: "/assets/logos/react.svg",
       },
       {
         id: 2,
-        name: ".Net",
-        path: "/assets/logos/dotnet.svg",
+        name: "Expo",
+        path: "/assets/logos/expo.svg",
       },
       {
         id: 3,
-        name: "Ef Core",
-        path: "/assets/logos/efcore.png",
-      },
-      {
-        id: 4,
-        name: "TailwindCSS",
-        path: "/assets/logos/tailwindcss.svg",
+        name: "Supabase",
+        path: "/assets/logos/supabase.svg",
       },
     ],
   },
   {
     id: 2,
+    category: "softwareDevelopment",
+    title: "Student Retention Analytics",
+    description:
+      "A machine learning platform that predicts university student dropout risk using official public education data, helping institutions identify at-risk students and intervene early.",
+    subDescription: [
+      "Built a FastAPI (Python) backend exposing REST endpoints for predictions, statistics, and institutional queries.",
+      "Trained machine learning models (scikit-learn + XGBoost) on SPADIES education data to predict dropout probability with SHAP-based explanations.",
+      "Developed an interactive frontend with Chart.js for dashboards, a risk calculator, and department-level maps.",
+      "Deployed the API on Railway/Render and the frontend on Vercel using free-tier infrastructure.",
+    ],
+    href: "https://alerta-estudiantil.leomoslab.com/",
+    logo: "",
+    image: "/assets/projects/student-retention-analytics.jpg",
+    tags: [
+      {
+        id: 1,
+        name: "Python",
+        path: "/assets/logos/python-flat.svg",
+      },
+      {
+        id: 2,
+        name: "FastAPI",
+        path: "/assets/logos/fastapi-flat.svg",
+      },
+      {
+        id: 3,
+        name: "Next.js",
+        path: "/assets/logos/nextjs-flat.svg",
+      },
+      {
+        id: 4,
+        name: "React",
+        path: "/assets/logos/react-flat.svg",
+      },
+      {
+        id: 5,
+        name: "PostgreSQL",
+        path: "/assets/logos/postgresql-flat.svg",
+      },
+      {
+        id: 6,
+        name: "Docker",
+        path: "/assets/logos/docker-flat.svg",
+      },
+    ],
+  },
+  {
+    id: 3,
+    category: "mobileApps",
+    title: "Futurópolis",
+    subtitle: "Interactive 3D Smart City",
+    description:
+      "An interactive 3D web experience that explores the future of smart cities through technology, digital design, and immersive user experiences.",
+    subDescription: [
+      "Built a 3D smart city with Three.js, React, and TypeScript, featuring 42 interactive IoT sensors across traffic, lighting, air quality, temperature, waste, and security.",
+      "Implemented real-time sensor data visualization with a live HUD dashboard and per-sensor detail panels.",
+      "Designed first-person keyboard and mouse controls for smoothly exploring the city with camera mode switching.",
+      "Optimized rendering to sustain 45-60 FPS through simplified geometry, selective shadows, and pixel ratio limits.",
+    ],
+    href: "https://github.com/leomos2022/FUTOROPOLIS",
+    logo: "",
+    image: "/assets/projects/futuropolis.jpg",
+    tags: [
+      {
+        id: 1,
+        name: "Three.js",
+        path: "/assets/logos/threejs.svg",
+      },
+      {
+        id: 2,
+        name: "React",
+        path: "/assets/logos/react.svg",
+      },
+      {
+        id: 3,
+        name: "TypeScript",
+        path: "/assets/logos/typescript.svg",
+      },
+      {
+        id: 4,
+        name: "HTML",
+        path: "/assets/logos/html5.svg",
+      },
+      {
+        id: 5,
+        name: "CSS",
+        path: "/assets/logos/css3.svg",
+      },
+      {
+        id: 6,
+        name: "JavaScript",
+        path: "/assets/logos/javascript.svg",
+      },
+    ],
+  },
+  {
+    id: 4,
+    category: "landingPages",
+    title: "Creaciones Cleo",
+    description:
+      "A professional landing website for Cleo Rodríguez's sewing and clothing alteration services, showcasing her portfolio, testimonials, and contact booking.",
+    subDescription: [
+      "Built with React 18, Vite, and Tailwind CSS for a modern, responsive experience across devices.",
+      "Implemented a portfolio gallery, testimonials section, and a functional contact form with EmailJS integration.",
+      "Added social media integration and smooth-scrolling navigation for seamless browsing.",
+      "Deployed on GitHub Pages with an automated CI/CD pipeline on every push to main.",
+    ],
+    href: "https://leomos2022.github.io/creaciones-cleo/",
+    logo: "",
+    image: "/assets/projects/wordpress-theme.jpg",
+    tags: [
+      {
+        id: 1,
+        name: "React",
+        path: "/assets/logos/react.svg",
+      },
+      {
+        id: 2,
+        name: "TailwindCSS",
+        path: "/assets/logos/tailwindcss.svg",
+      },
+      {
+        id: 3,
+        name: "Vite",
+        path: "/assets/logos/vitejs.svg",
+      },
+      {
+        id: 4,
+        name: "HTML",
+        path: "/assets/logos/html5.svg",
+      },
+      {
+        id: 5,
+        name: "CSS",
+        path: "/assets/logos/css3.svg",
+      },
+      {
+        id: 6,
+        name: "JavaScript",
+        path: "/assets/logos/javascript.svg",
+      },
+    ],
+  },
+  {
+    id: 5,
+    category: "landingPages",
     title: "Authentication & Authorization System",
+    titleColor: "text-sand",
     description:
       "A secure authentication and authorization system using Auth0 for seamless user management.",
     subDescription: [
@@ -74,119 +216,10 @@ export const myProjects = [
     ],
   },
   {
-    id: 3,
-    title: "Blazor Web App",
-    description:
-      "A modern, interactive web application built with Blazor WebAssembly and .NET Core.",
-    subDescription: [
-      "Developed a fully interactive Single Page Application (SPA) using Blazor WebAssembly.",
-      "Implemented API interactions using .NET Core for a robust backend.",
-      "Designed responsive UI components with Tailwind CSS for an enhanced UX.",
-      "Integrated SQLite for efficient client-side database storage.",
-    ],
-    href: "",
-    logo: "",
-    image: "/assets/projects/blazor-app.jpg",
-    tags: [
-      {
-        id: 1,
-        name: "Blazor",
-        path: "/assets/logos/blazor.svg",
-      },
-      {
-        id: 2,
-        name: ".NET Core",
-        path: "/assets/logos/dotnetcore.svg",
-      },
-      {
-        id: 3,
-        name: "SQLite",
-        path: "/assets/logos/sqlite.svg",
-      },
-      {
-        id: 4,
-        name: "TailwindCSS",
-        path: "/assets/logos/tailwindcss.svg",
-      },
-    ],
-  },
-  {
-    id: 4,
-    title: "C++ Game Engine",
-    description:
-      "A lightweight C++ game engine designed for 2D and 3D game development.",
-    subDescription: [
-      "Built a powerful rendering engine using OpenGL and C++.",
-      "Developed a physics engine with collision detection and particle effects.",
-      "Implemented a scripting system for easy game customization.",
-      "Optimized performance with multi-threading and efficient memory management.",
-    ],
-    href: "",
-    logo: "",
-    image: "/assets/projects/game-engine.jpg",
-    tags: [
-      {
-        id: 1,
-        name: "C++",
-        path: "/assets/logos/cplusplus.svg",
-      },
-      {
-        id: 2,
-        name: "C#",
-        path: "/assets/logos/csharp.svg",
-      },
-      {
-        id: 3,
-        name: "Git",
-        path: "/assets/logos/git.svg",
-      },
-      {
-        id: 4,
-        name: "Microsoft",
-        path: "/assets/logos/microsoft.svg",
-      },
-    ],
-  },
-  {
-    id: 5,
-    title: "WordPress Custom Theme",
-    description:
-      "A fully customizable WordPress theme optimized for performance and SEO.",
-    subDescription: [
-      "Developed a responsive WordPress theme using HTML5, CSS3, and JavaScript.",
-      "Integrated Tailwind CSS for modern styling and UI enhancements.",
-      "Optimized SEO and page speed using Vite.js for fast builds.",
-      "Implemented custom widgets and plugin compatibility for extended functionality.",
-    ],
-    href: "",
-    logo: "",
-    image: "/assets/projects/wordpress-theme.jpg",
-    tags: [
-      {
-        id: 1,
-        name: "WordPress",
-        path: "/assets/logos/wordpress.svg",
-      },
-      {
-        id: 2,
-        name: "HTML5",
-        path: "/assets/logos/html5.svg",
-      },
-      {
-        id: 3,
-        name: "CSS3",
-        path: "/assets/logos/css3.svg",
-      },
-      {
-        id: 4,
-        name: "Vite.js",
-        path: "/assets/logos/vitejs.svg",
-      },
-    ],
-  },
-  {
     id: 6,
+    category: "landingPages",
     title: "Online Learning Platform",
+    titleColor: "text-sand",
     description:
       "A web application that allows users to enroll in courses, watch video lectures, and take quizzes.",
     subDescription: [
@@ -197,7 +230,7 @@ export const myProjects = [
     ],
     href: "",
     logo: "",
-    image: "/assets/projects/elearning.jpg",
+    image: "/assets/projects/blazor-app.jpg",
     tags: [
       {
         id: 1,
@@ -222,6 +255,8 @@ export const myProjects = [
     ],
   },
 ];
+
+export const projectCategories = ["mobileApps", "softwareDevelopment", "landingPages"];
 
 export const mySocials = [
   {

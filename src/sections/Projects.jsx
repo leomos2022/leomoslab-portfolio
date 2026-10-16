@@ -1,11 +1,12 @@
-
 import React, { useState } from "react";
 import Project from "../components/Project";
-import { myProjects } from "../components/constants";
+import { myProjects, projectCategories } from "../components/constants";
 import { motion, useMotionValue, useSpring } from "framer-motion";
+import { useTranslation } from "react-i18next";
 
 
 const Projects = () => {
+  const { t } = useTranslation();
   const [preview, setPreview] = useState(null);
   const [isHovering, setIsHovering] = useState(false);
   const x = useMotionValue(0);
@@ -26,20 +27,32 @@ const Projects = () => {
       onMouseLeave={() => setIsHovering(false)}
       className="relative c-space section-spacing scroll-mt-24"
     >
-      <h2 className="text-heading">My Selected Projects</h2>
+      <h2 className="text-heading">{t("projects.title")}</h2>
       <div className="bg-gradient-to-r from-transparent via-neutral-700 to-transparent mt-12 h-[1px] w-full "></div>
-      {myProjects.map((project) => (
-        <Project
-          key={project.id}
-          title={project.title}
-          description={project.description}
-          subDescription={project.subDescription}
-          href={project.href}
-          image={project.image}
-          tags={project.tags}
-          setPreview={setPreview}
-        />
-      ))}
+      {projectCategories.map((category) => {
+        const group = myProjects.filter((project) => project.category === category);
+        if (!group.length) return null;
+        return (
+          <div key={category} className="mt-12">
+            <h3 className="text-heading text-sand">{t(`projects.${category}`)}</h3>
+            {group.map((project) => (
+              <Project
+                key={project.id}
+                title={project.title}
+                subtitle={project.subtitle}
+                description={project.description}
+                subDescription={project.subDescription}
+                href={project.href}
+                image={project.image}
+                tags={project.tags}
+                titleColor={project.titleColor}
+                setPreview={setPreview}
+              />
+            ))}
+            <div className="bg-gradient-to-r from-transparent via-neutral-700 to-transparent h-[1px] w-full "></div>
+          </div>
+        );
+      })}
       {/* Rectángulo que sigue el cursor solo si está sobre la sección */}
       {isHovering && (
         <motion.div

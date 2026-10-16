@@ -4,12 +4,15 @@ import ProjectDetails from "./ProjectDetails";
 
 const Project = ({
   title,
+  subtitle,
   description,
   subDescription,
   href,
   image,
   tags = [],
   setPreview,
+  titleColor = "text-white",
+  subtitleColor = "text-sand",
 }) => {
   const [isHidden, setIsHidden] = useState(false);
   return (
@@ -20,8 +23,11 @@ const Project = ({
         onMouseLeave={() => setPreview && setPreview(null)}
       >
         <div>
-          <p className="text-2xl">{title}</p>
-          <div className="flex gap-5 mt-2 text-sand">
+          <p className={`text-heading ${titleColor}`}>{title}</p>
+          {subtitle && (
+            <p className={`text-heading ${subtitleColor} mt-1`}>{subtitle}</p>
+          )}
+          <div className="flex gap-5 mt-2 text-white">
             {tags.map((tag) => (
               <span key={tag.id}>{tag.name}</span>
             ))}
@@ -39,11 +45,14 @@ const Project = ({
       {isHidden && (
         <ProjectDetails
           title={title}
+          subtitle={subtitle}
           description={description}
           subDescription={subDescription}
           image={image}
           tags={tags}
           href={href}
+          titleColor={titleColor}
+          subtitleColor={subtitleColor}
           closeModal={() => setIsHidden(false)}
         />
       )}
