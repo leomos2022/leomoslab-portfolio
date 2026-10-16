@@ -18,6 +18,17 @@
     "mobile1": "Construyendo",
     "mobile2": "Soluciones Digitales"
   },
+  "about": {
+    "title": "Sobre mí",
+    "grid1Name": "Hola, soy Leonardo Mosquera",
+    "grid1Desc": "En los últimos 4 años desarrollé mis habilidades en frontend y backend para crear aplicaciones web y software dinámicos y responsivos.",
+    "grid2Text": "EL CÓDIGO ES ARTE",
+    "grid3Title": "Ubicación",
+    "grid3Desc": "Basado en Bogotá, Colombia — disponible para trabajo remoto mundial",
+    "grid4CTA": "¿Quieres iniciar un proyecto juntos?",
+    "grid5Title": "Stack Tecnológico",
+    "grid5Desc": "Trabajo con una variedad de lenguajes, frameworks y herramientas que me permiten construir aplicaciones robustas y escalables"
+  },
   "projects": {
     "title": "Mis Proyectos Seleccionados",
     "mobileApps": "Aplicaciones Móviles",

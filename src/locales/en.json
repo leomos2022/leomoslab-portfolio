@@ -18,6 +18,17 @@
     "mobile1": "Building",
     "mobile2": "Digital Solutions"
   },
+  "about": {
+    "title": "About Me",
+    "grid1Name": "Hi, I'm Leonardo Mosquera",
+    "grid1Desc": "Over the last 4 years, I developed my frontend and backend dev skills to deliver dynamic and responsive software and web applications.",
+    "grid2Text": "CODE IS CRAFT",
+    "grid3Title": "Location",
+    "grid3Desc": "Based in Bogotá, Colombia — open to remote work worldwide",
+    "grid4CTA": "Do you want to start a project together?",
+    "grid5Title": "Tech Stack",
+    "grid5Desc": "I work with a variety of languages, frameworks, and tools that allow me to build robust and scalable applications"
+  },
   "projects": {
     "title": "My Selected Projects",
     "mobileApps": "Mobile Apps",
