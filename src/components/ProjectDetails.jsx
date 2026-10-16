@@ -1,4 +1,5 @@
 import { motion } from "motion/react";
+import { useTranslation } from "react-i18next";
 const ProjectDetails = ({
   title,
   subtitle,
@@ -11,6 +12,7 @@ const ProjectDetails = ({
   titleColor = "text-white",
   subtitleColor = "text-sand",
 }) => {
+  const { t } = useTranslation();
   const hasProjectLink = Boolean(href);
 
   return (
@@ -54,7 +56,7 @@ const ProjectDetails = ({
                 rel="noopener noreferrer"
                 className="inline-flex items-center gap-1 font-medium cursor-pointer hover-animation"
               >
-                View Project
+                {t("projects.viewProject")}
                 <img src="assets/arrow-up.svg" className="size-4" />
               </a>
             )}

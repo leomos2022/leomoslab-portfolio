@@ -1,5 +1,6 @@
 
 import React, { useState } from "react";
+import { useTranslation } from "react-i18next";
 import ProjectDetails from "./ProjectDetails";
 
 const Project = ({
@@ -14,6 +15,7 @@ const Project = ({
   titleColor = "text-white",
   subtitleColor = "text-sand",
 }) => {
+  const { t } = useTranslation();
   const [isHidden, setIsHidden] = useState(false);
   return (
     <>
@@ -37,7 +39,7 @@ const Project = ({
           onClick={() => setIsHidden(true)}
           className="flex items-center gap-1 cursor-pointer hover-animation"
         >
-          Read More
+          {t("projects.readMore")}
           <img src="assets/arrow-right.svg" className="w-5" />
         </button>
       </div>
