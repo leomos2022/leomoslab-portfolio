@@ -9,48 +9,76 @@ const Contact = () => {
     email: "",
     message: "",
   });
+  const [errors, setErrors] = useState({});
   const [isLoading, setIsLoading] = useState(false);
   const [showAlert, setShowAlert] = useState(false);
   const [alertType, setAlertType] = useState("success");
   const [alertMessage, setAlertMessage] = useState("");
-  const handleChange = (e) => {
-    setFormData({ ...formData, [e.target.name]: e.target.value });
+
+  const validateForm = () => {
+    const newErrors = {};
+    if (!formData.name.trim()) {
+      newErrors.name = "Name is required";
+    }
+    if (!formData.email.trim()) {
+      newErrors.email = "Email is required";
+    } else if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(formData.email)) {
+      newErrors.email = "Please enter a valid email";
+    }
+    if (!formData.message.trim()) {
+      newErrors.message = "Message is required";
+    } else if (formData.message.trim().length < 10) {
+      newErrors.message = "Message must be at least 10 characters";
+    }
+    setErrors(newErrors);
+    return Object.keys(newErrors).length === 0;
   };
+
   const showAlertMessage = (type, message) => {
     setAlertType(type);
     setAlertMessage(message);
     setShowAlert(true);
-    setTimeout(() => {
-      setShowAlert(false);
-    }, 5000);
+    setTimeout(() => setShowAlert(false), 5000);
   };
+
+  const handleChange = (e) => {
+    setFormData({ ...formData, [e.target.name]: e.target.value });
+    if (errors[e.target.name]) {
+      setErrors({ ...errors, [e.target.name]: "" });
+    }
+  };
+
   const handleSubmit = async (e) => {
     e.preventDefault();
+    if (!validateForm()) return;
+
     setIsLoading(true);
 
     try {
-      console.log("From submitted:", formData);
       await emailjs.send(
-        "service_ggobdjt",
-        "template_sia1ytw",
+        import.meta.env.VITE_EMAILJS_SERVICE_ID,
+        import.meta.env.VITE_EMAILJS_TEMPLATE_ID,
         {
           from_name: formData.name,
-          to_name: "leomoslab",
+          to_name: "Leonardo",
           from_email: formData.email,
-          to_email: "leomoslab@gmail.com",
+          to_email: import.meta.env.VITE_EMAILJS_TO_EMAIL,
           message: formData.message,
         },
-        "OazumQtXut_mD0Vl4"
+        import.meta.env.VITE_EMAILJS_PUBLIC_KEY
       );
+
       setIsLoading(false);
       setFormData({ name: "", email: "", message: "" });
-      showAlertMessage("success", "You message has been sent!");
+      setErrors({});
+      showAlertMessage("success", "Message sent successfully! I'll get back to you soon.");
     } catch (error) {
       setIsLoading(false);
-      console.log(error);
-      showAlertMessage("danger", "Something went wrong!");
+      console.error("EmailJS error:", error);
+      showAlertMessage("danger", "Something went wrong. Please try again or email me directly.");
     }
   };
+
   return (
     <section id="contact" className="relative flex items-center c-space section-spacing scroll-mt-24">
       <Particles
@@ -65,65 +93,73 @@ const Contact = () => {
         <div className="flex flex-col items-start w-full gap-5 mb-10">
           <h2 className="text-heading">Let's Talk</h2>
           <p className="font-normal text-neutral-400">
-            Whether you're loking to build a new website, improve your existing
-            platform, or bring a unique project to life, I'm here to help
+            Whether you're looking to build a new website, improve your existing
+            platform, or bring a unique project to life, I'm here to help.
           </p>
         </div>
-        <form className="w-full" onSubmit={handleSubmit}>
+        <form className="w-full" onSubmit={handleSubmit} noValidate>
           <div className="mb-5">
-            <label htmlFor="name" className="feild-label">
-              Full Name
+            <label htmlFor="name" className="field-label">
+              Full Name *
             </label>
             <input
               id="name"
               name="name"
               type="text"
-              className="field-input field-input-focus"
+              className={`field-input field-input-focus ${errors.name ? "border-red-500 focus-visible:ring-red-500/20" : ""}`}
               placeholder="John Doe"
               autoComplete="name"
               value={formData.name}
               onChange={handleChange}
               required
             />
+            {errors.name && (
+              <p className="mt-1 text-xs text-red-400">{errors.name}</p>
+            )}
           </div>
           <div className="mb-5">
-            <label htmlFor="email" className="feild-label">
-              Email
+            <label htmlFor="email" className="field-label">
+              Email *
             </label>
             <input
               id="email"
               name="email"
               type="email"
-              className="field-input field-input-focus"
-              placeholder="enteryour@email.com"
+              className={`field-input field-input-focus ${errors.email ? "border-red-500 focus-visible:ring-red-500/20" : ""}`}
+              placeholder="your@email.com"
               autoComplete="email"
               value={formData.email}
               onChange={handleChange}
               required
             />
+            {errors.email && (
+              <p className="mt-1 text-xs text-red-400">{errors.email}</p>
+            )}
           </div>
           <div className="mb-5">
-            <label htmlFor="message" className="feild-label">
-              Message
+            <label htmlFor="message" className="field-label">
+              Message *
             </label>
             <textarea
               id="message"
               name="message"
-              type="text"
-              rows="4"
-              className="field-input field-input-focus"
+              rows="5"
+              className={`field-input field-input-focus ${errors.message ? "border-red-500 focus-visible:ring-red-500/20" : ""}`}
               placeholder="Share your thoughts..."
-              autoComplete="message"
               value={formData.message}
               onChange={handleChange}
               required
             />
+            {errors.message && (
+              <p className="mt-1 text-xs text-red-400">{errors.message}</p>
+            )}
           </div>
           <button
             type="submit"
-            className="w-full px-1 py-3 text-lg text-center rounded-md cursor-pointer bg-radial from-lavender to-royal hover-animation"
+            disabled={isLoading}
+            className={`w-full px-1 py-3 text-lg text-center rounded-md cursor-pointer bg-gradient-to-r from-lavender to-royal hover-animation ${isLoading ? "opacity-70 cursor-not-allowed" : ""}`}
           >
-            {!isLoading ? "Send" : "Sending..."}
+            {isLoading ? "Sending..." : "Send Message"}
           </button>
         </form>
       </div>
