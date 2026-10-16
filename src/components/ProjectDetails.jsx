@@ -1,5 +1,6 @@
 import { motion } from "motion/react";
 import { useTranslation } from "react-i18next";
+
 const ProjectDetails = ({
   title,
   subtitle,
@@ -16,36 +17,46 @@ const ProjectDetails = ({
   const hasProjectLink = Boolean(href);
 
   return (
-    <div className="fixed inset-0 z-50 flex items-center justify-center w-full h-full overflow-hidden backdrop-blur-sm">
+    <div
+      className="fixed inset-0 z-50 flex items-center justify-center p-4 overflow-y-auto backdrop-blur-sm"
+      onClick={(e) => e.target === e.currentTarget && closeModal()}
+    >
       <motion.div
-        className="relative max-w-2xl border shadow-sm rounded-2xl bg-gradient-to-l from-midnight to-navy border-white/10"
-        initial={{ opacity: 0, scale: 0.5 }}
+        className="relative w-full max-w-2xl border shadow-sm rounded-2xl bg-gradient-to-l from-midnight to-navy border-white/10 my-auto"
+        initial={{ opacity: 0, scale: 0.9 }}
         animate={{ opacity: 1, scale: 1 }}
       >
         <button
           onClick={closeModal}
-          className="absolute p-2 rounded-sm top-5 right-5 bg-midnight hover:bg-gray-500"
+          className="absolute p-2 rounded-sm top-3 right-3 z-10 bg-midnight hover:bg-gray-500"
         >
-          <img src="assets/close.svg" className="w-6 h-6" />
+          <img src="assets/close.svg" className="w-5 h-5" />
         </button>
-        <img src={image} alt={title} className="w-full h-72 object-cover rounded-t-2xl" />
-        <div className="p-5">
-          <h5 className={`mb-1 text-2xl font-bold ${titleColor}`}>{title}</h5>
+        <img
+          src={image}
+          alt={title}
+          className="w-full h-48 sm:h-64 object-cover rounded-t-2xl"
+        />
+        <div className="p-4 sm:p-5">
+          <h5 className={`mb-1 text-xl sm:text-2xl font-bold ${titleColor}`}>{title}</h5>
           {subtitle && (
-            <h6 className={`mb-2 text-xl font-semibold ${subtitleColor}`}>{subtitle}</h6>
+            <h6 className={`mb-2 text-lg sm:text-xl font-semibold ${subtitleColor}`}>{subtitle}</h6>
           )}
-          <p className="mb-3 font-normal text-neutral-400">{description}</p>
+          <p className="mb-3 text-sm font-normal text-neutral-400">{description}</p>
           {subDescription.map((subDesc, index) => (
-            <p className="mb-3 font-normal text-neutral-400">{subDesc}</p>
+            <p className="mb-2 text-sm font-normal text-neutral-400" key={index}>
+              {subDesc}
+            </p>
           ))}
-          <div className="flex items-center justify-between mt-4">
-            <div className="flex gap-3">
+          <div className="flex flex-wrap items-center justify-between gap-3 mt-4">
+            <div className="flex flex-wrap gap-2">
               {tags.map((tag) => (
                 <img
                   key={tag.id}
                   src={tag.path}
                   alt={tag.name}
-                  className="rounded-lg size-10 hover-animation"
+                  title={tag.name}
+                  className="rounded-lg size-8 sm:size-10 hover-animation"
                 />
               ))}
             </div>
@@ -54,7 +65,7 @@ const ProjectDetails = ({
                 href={href}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-flex items-center gap-1 font-medium cursor-pointer hover-animation"
+                className="inline-flex items-center gap-1 text-sm font-medium cursor-pointer hover-animation"
               >
                 {t("projects.viewProject")}
                 <img src="assets/arrow-up.svg" className="size-4" />
