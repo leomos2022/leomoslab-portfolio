@@ -51,13 +51,17 @@ const ProjectDetails = ({
           <div className="flex flex-wrap items-center justify-between gap-3 mt-4">
             <div className="flex flex-wrap gap-2">
               {tags.map((tag) => (
-                <img
+                <div
                   key={tag.id}
-                  src={tag.path}
-                  alt={tag.name}
                   title={tag.name}
-                  className="rounded-lg size-8 sm:size-10 hover-animation"
-                />
+                  className="flex items-center justify-center size-8 sm:size-10 rounded-lg bg-white/10 p-1.5 hover-animation"
+                >
+                  <img
+                    src={tag.path}
+                    alt={tag.name}
+                    className="w-full h-full object-contain"
+                  />
+                </div>
               ))}
             </div>
             {hasProjectLink && (

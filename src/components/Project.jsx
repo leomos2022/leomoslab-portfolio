@@ -33,9 +33,11 @@ const Project = ({
               {subtitle}
             </p>
           )}
-          <div className="flex flex-wrap gap-3 mt-2 text-sm text-neutral-400">
+          <div className="flex flex-wrap gap-2 mt-2">
             {tags.map((tag) => (
-              <span key={tag.id}>{tag.name}</span>
+              <span key={tag.id} className="text-xs text-neutral-400 bg-white/5 px-2 py-0.5 rounded-full border border-white/10">
+                {tag.name}
+              </span>
             ))}
           </div>
         </div>
