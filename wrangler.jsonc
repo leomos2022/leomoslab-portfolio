@@ -1,0 +1,9 @@
+{
+  "name": "leomoslab",
+  "compatibility_date": "2025-01-01",
+  "assets": { "directory": "./dist" },
+  "routes": [
+    { "pattern": "leomoslab.com", "custom_domain": true },
+    { "pattern": "www.leomoslab.com", "custom_domain": true }
+  ]
+}
