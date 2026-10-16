@@ -75,10 +75,10 @@ const About = () => {
         </div>
         {/* Grid 3 */}
         <div className="grid-black-color grid-3">
-        <div className="z-10 w-[50%]">
-          <p className="headText">Time Zone</p>
+         <div className="z-10 w-[50%]">
+          <p className="headText">Location</p>
           <p className="subtext">
-          I'm based in Mars, and open to remote work wordwide
+          Based in Bogotá, Colombia — open to remote work worldwide
           </p>
         </div>
         <figure className='absolute left-[30%] top-[10%]'>

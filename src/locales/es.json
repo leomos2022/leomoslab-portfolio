@@ -8,18 +8,21 @@
     "contact": "Contacto"
   },
   "hero": {
-    "title": "Hola, soy Leonardo Mosquera",
+    "title": "Hola, soy Leonardo",
     "subtitle1": "Ingeniero de Software",
-    "websolutions": "Desarrollo soluciones web seguras y eficientes",
-    "secure": "Seguro",
-    "modern": "Moderno",
-    "scalable": "Escalable",
-    "websolutions": "soluciones web seguras y eficientes",
+    "subtitle2": "Construyo productos digitales",
+    "secure": "Seguros",
+    "modern": "Modernos",
+    "scalable": "Escalables",
+    "websolutions": "",
     "mobile1": "Construyendo",
-    "mobile2": "Aplicaciones Web"
+    "mobile2": "Soluciones Digitales"
   },
   "projects": {
-    "title": "Mis Proyectos Seleccionados"
+    "title": "Mis Proyectos Seleccionados",
+    "mobileApps": "Aplicaciones Móviles",
+    "softwareDevelopment": "Desarrollo de Software",
+    "landingPages": "Landing Pages"
   },
   "contact": {
     "title": "Hablemos",

@@ -35,9 +35,9 @@ const Contact = () => {
         "template_sia1ytw",
         {
           from_name: formData.name,
-          to_name: "Leonardo",
+          to_name: "leomoslab",
           from_email: formData.email,
-          to_email: "leomoscraft@gmail.com",
+          to_email: "leomoslab@gmail.com",
           message: formData.message,
         },
         "OazumQtXut_mD0Vl4"
@@ -79,7 +79,7 @@ const Contact = () => {
               name="name"
               type="text"
               className="field-input field-input-focus"
-              placeholder="Leonardo Mosquera"
+              placeholder="John Doe"
               autoComplete="name"
               value={formData.name}
               onChange={handleChange}

@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128">
+  <defs>
+    <linearGradient id="fa-teal" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#009688"/>
+      <stop offset="100%" stop-color="#4DB6AC"/>
+    </linearGradient>
+    <linearGradient id="fa-cyan" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#00D4FF"/>
+      <stop offset="100%" stop-color="#009688"/>
+    </linearGradient>
+  </defs>
+  <!-- Letra F estilizada y gruesa -->
+  <path d="M35 25 L75 25 L75 40 L50 40 L50 65 L80 65 L80 80 L50 80 L50 105 L35 105 Z" fill="url(#fa-teal)"/>
+  <!-- Rayo de velocidad a la derecha -->
+  <path d="M90 30 L110 15 L95 55 L115 45 L95 80 L110 70 L85 95 Z" fill="url(#fa-cyan)"/>
+  <!-- Pequeño brillo en la F -->
+  <path d="M40 30 L70 30 L70 35 L40 35 Z" fill="#FFFFFF" opacity="0.3"/>
+</svg>

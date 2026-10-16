@@ -8,18 +8,21 @@
     "contact": "Contact"
   },
   "hero": {
-    "title": "Hi I'm Leonardo",
-    "subtitle1": "A Developer",
-    "subtitle2": "Dedicated to Crafting",
+    "title": "Hi, I'm Leonardo",
+    "subtitle1": "A Software Engineer",
+    "subtitle2": "dedicated to building",
     "secure": "Secure",
     "modern": "Modern",
     "scalable": "Scalable",
-    "websolutions": "Web Solutions",
+    "websolutions": "digital solutions",
     "mobile1": "Building",
-    "mobile2": "Web Applications"
+    "mobile2": "Digital Solutions"
   },
   "projects": {
-    "title": "My Selected Projects"
+    "title": "My Selected Projects",
+    "mobileApps": "Mobile Apps",
+    "softwareDevelopment": "Software Development",
+    "landingPages": "Landing Pages"
   },
   "contact": {
     "title": "Let's Talk",

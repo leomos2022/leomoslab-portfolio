@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128">
+  <defs>
+    <linearGradient id="py-blue" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#306998"/>
+      <stop offset="100%" stop-color="#5A9FD4"/>
+    </linearGradient>
+    <linearGradient id="py-yellow" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FFE873"/>
+      <stop offset="100%" stop-color="#FFD43B"/>
+    </linearGradient>
+  </defs>
+  <!-- Cuerpo principal (serpiente enrollada) -->
+  <path d="M64 20 C45 20 30 30 30 50 C30 70 45 80 64 80 C83 80 98 70 98 50 C98 30 83 20 64 20 Z" fill="url(#py-blue)"/>
+  <!-- Segmento amarillo en el centro -->
+  <path d="M50 45 C55 42 65 42 70 45 C72 50 70 55 65 57 C60 59 55 59 50 57 C48 55 48 50 50 45 Z" fill="url(#py-yellow)"/>
+  <!-- Segmento azul inferior -->
+  <path d="M45 60 C50 58 60 58 65 60 C67 63 65 67 60 69 C55 71 50 71 45 69 C43 67 43 63 45 60 Z" fill="url(#py-blue)"/>
+  <!-- Ojo -->
+  <circle cx="75" cy="42" r="2.5" fill="#0B0F19"/>
+  <!-- Boca sonriente -->
+  <path d="M75 48 Q80 50 82 48" stroke="#0B0F19" stroke-width="1.5" fill="none" stroke-linecap="round"/>
+  <!-- Detalle de escamas -->
+  <circle cx="55" cy="35" r="1.5" fill="#0B0F19" opacity="0.3"/>
+  <circle cx="60" cy="32" r="1.5" fill="#0B0F19" opacity="0.3"/>
+  <circle cx="65" cy="30" r="1.5" fill="#0B0F19" opacity="0.3"/>
+</svg>

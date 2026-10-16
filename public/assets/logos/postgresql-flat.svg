@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128">
+  <defs>
+    <linearGradient id="pg-blue" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#336791"/>
+      <stop offset="100%" stop-color="#00A3E0"/>
+    </linearGradient>
+  </defs>
+  <!-- Elefante estilizado -->
+  <path d="M40 60 Q30 45 40 35 Q55 25 70 35 Q85 45 80 60 Q90 70 80 85 Q65 95 50 90 Q35 85 35 70 Q30 65 40 60 Z" fill="url(#pg-blue)"/>
+  <!-- Trompa -->
+  <path d="M70 50 Q85 45 90 35 Q95 30 95 25" stroke="url(#pg-blue)" stroke-width="4" fill="none" stroke-linecap="round"/>
+  <!-- Ojo -->
+  <circle cx="55" cy="50" r="2.5" fill="#0B0F19"/>
+  <!-- Detalle de la espalda -->
+  <path d="M45 45 Q60 40 75 45" stroke="#0B0F19" stroke-width="1.5" fill="none" opacity="0.4"/>
+</svg>
