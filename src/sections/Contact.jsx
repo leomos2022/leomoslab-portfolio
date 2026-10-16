@@ -72,7 +72,6 @@ const Contact = () => {
       showAlertMessage("success", "Message sent successfully! I'll get back to you soon.");
     } catch (error) {
       setIsLoading(false);
-      console.error("EmailJS error:", error);
       showAlertMessage("danger", "Something went wrong. Please try again or email me directly.");
     }
   };
