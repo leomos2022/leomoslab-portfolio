@@ -68,16 +68,21 @@
   "contact": {
     "title": "Hablemos",
     "desc": "Ya sea que busques crear un nuevo sitio web, mejorar tu plataforma actual o dar vida a un proyecto único, estoy aquí para ayudarte.",
-    "name": "Nombre Completo",
-    "email": "Correo Electrónico",
+    "name": "Nombre completo",
+    "email": "Correo electrónico",
     "message": "Mensaje",
     "placeholderName": "Juan Pérez",
-    "placeholderEmail": "JuanPerez@email.com",
-    "placeholderMessage": "Comparte tus ideas...",
-    "send": "Enviar",
+    "placeholderEmail": "tu@correo.com",
+    "placeholderMessage": "Cuéntame sobre tu proyecto...",
+    "send": "Enviar mensaje",
     "sending": "Enviando...",
-    "success": "¡Tu mensaje ha sido enviado!",
-    "error": "¡Algo salió mal!"
+    "success": "¡Mensaje enviado correctamente! Me pondré en contacto contigo pronto.",
+    "error": "Algo salió mal. Por favor, inténtalo de nuevo o escríbeme directamente.",
+    "errorNameRequired": "El nombre es obligatorio",
+    "errorEmailRequired": "El correo electrónico es obligatorio",
+    "errorEmailInvalid": "Por favor, ingresa un correo electrónico válido",
+    "errorMessageRequired": "El mensaje es obligatorio",
+    "errorMessageMin": "El mensaje debe tener al menos 10 caracteres"
   },
   "footer": {
     "terms": "Términos y Condiciones",

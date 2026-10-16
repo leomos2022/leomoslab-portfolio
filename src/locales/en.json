@@ -72,12 +72,17 @@
     "email": "Email",
     "message": "Message",
     "placeholderName": "John Doe",
-    "placeholderEmail": "JohnDoe@email.com",
+    "placeholderEmail": "your@email.com",
     "placeholderMessage": "Share your thoughts...",
-    "send": "Send",
+    "send": "Send Message",
     "sending": "Sending...",
-    "success": "Your message has been sent!",
-    "error": "Something went wrong!"
+    "success": "Message sent successfully! I'll get back to you soon.",
+    "error": "Something went wrong. Please try again or email me directly.",
+    "errorNameRequired": "Name is required",
+    "errorEmailRequired": "Email is required",
+    "errorEmailInvalid": "Please enter a valid email",
+    "errorMessageRequired": "Message is required",
+    "errorMessageMin": "Message must be at least 10 characters"
   },
   "footer": {
     "terms": "Terms & Conditions",
