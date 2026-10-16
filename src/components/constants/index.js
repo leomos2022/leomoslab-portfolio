@@ -278,36 +278,26 @@ export const mySocials = [
 
 export const experiences = [
   {
-    title: "Software Developer",
-    job: "Security & Defense Projects",
-    date: "2021-2023",
+    title: "Graphic and Web Developer",
+    job: "Finotex · Bogotá, CO, Colombia",
+    date: "Feb 2017 - Nov 2022",
     contents: [
-      "Enhanced application security and developed new features, adhering to standards set by the Passive Defense Organization and National Cyberspace Center.",
-      "Designed and implemented intuitive map interfaces using MapsUI, enhancing user experience and enabling seamless interactive map integration.",
-      "Developed applications for industrial automation, leveraging C++ and the Fatek API for PLC communication.",
-      "Enhanced responsiveness and usability of applications using Windows Forms and WPF frameworks.",
-      "Executed XML to SVG conversions using X-DOM, ensuring dynamic and efficient data visualization.",
+      "Managed all digital and visual communication for the brand, including website content, social media graphics, and promotional materials.",
+      "Designed and maintained the brand's visual identity across digital and physical touchpoints.",
+      "Handled basic web updates and content management, improving online engagement.",
+      "Developed project management, budgeting, and client-facing skills by running all aspects of a small business.",
     ],
   },
   {
-    title: "Back-End Developer",
-    job: "Car Manufacture",
-    date: "2023-2024",
+    title: "Independent Software Developer & Digital Consultant",
+    job: "Self-employed · Bogotá, CO, Colombia",
+    date: "Jun 2023 - Present",
     contents: [
-      "Engineered systems for large-scale data ingestion and analysis, ensuring efficient data processing and storage.",
-      "Developed back-end systems enabling vehicle-to-cloud communication for telemetry, diagnostics, and remote control:",
-      "✅ Implemented secure APIs, following ISO 26262 automotive safety standards.",
-      "✅ Ensured data privacy for customers and partners through industry-compliant protocols.",
-      "✅ Delivered remote features like over-the-air updates, real-time tracking, and remote start capabilities.",
-    ],
-  },
-  {
-    title: "Freelance Developer",
-    job: "Self-Employed",
-    date: "2025-Present",
-    contents: [
-      "Created a personal portfolio using Three.js, React, Vite, and WebAPI to showcase technical expertise.",
-      "Continuously enhancing technical skills and expanding expertise in modern web development and back-end technologies.",
+      "Design and develop responsive websites and web applications for small businesses and independent clients.",
+      "Manage the full project lifecycle: requirements gathering, UI/UX design, development, deployment, and maintenance.",
+      "Build custom solutions using HTML, CSS, JavaScript, Node.js, and Python.",
+      "Provide digital consulting on branding, SEO, and online presence improvement.",
+      "Collaborate remotely with clients to understand their needs and deliver tailored digital solutions.",
     ],
   },
 ];
