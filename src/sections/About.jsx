@@ -75,6 +75,29 @@ const About = () => {
           </div>
         </div>
 
+        {/* Grid 6 — TiraFactos */}
+        <a
+          href="https://tirafactos.co"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="grid-6 group bg-gradient-to-br from-[#4a1010] via-[#230a0a] to-[#0d0303] rounded-2xl"
+        >
+          <img
+            src="assets/tirafactos/sello.png"
+            alt="Sello de TiraFactos"
+            className="absolute -right-6 -top-6 w-28 md:w-52 opacity-90 rotate-6 transition-transform duration-300 group-hover:rotate-0 group-hover:scale-105 pointer-events-none"
+          />
+          <div className="z-10 w-[62%] md:w-[70%]">
+            <p className="headtext">{t("about.grid6Title")}</p>
+            <p className="subtext">{t("about.grid6Desc")}</p>
+            <span className="inline-flex items-center gap-1 mt-3 text-sm font-medium text-[#f5e6c8] hover-animation">
+              tirafactos.co
+              <img src="assets/arrow-up.svg" className="size-4" alt="" />
+            </span>
+          </div>
+          <div className="absolute inset-x-0 pointer-events-none -bottom-4 h-1/2 bg-gradient-to-t from-[#7a1616]/60" />
+        </a>
+
       </div>
     </section>
   );
