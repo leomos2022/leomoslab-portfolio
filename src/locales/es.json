@@ -27,10 +27,13 @@
     "grid3Desc": "Basado en Bogotá, Colombia — disponible para trabajo remoto mundial",
     "grid4CTA": "¿Quieres iniciar un proyecto juntos?",
     "grid5Title": "Stack Tecnológico",
-    "grid5Desc": "Trabajo con una variedad de lenguajes, frameworks y herramientas que me permiten construir aplicaciones robustas y escalables"
+    "grid5Desc": "Trabajo con una variedad de lenguajes, frameworks y herramientas que me permiten construir aplicaciones robustas y escalables",
+    "grid6Title": "Fundador de TiraFactos",
+    "grid6Desc": "Mi sello de documentales verificados: historias reales de Colombia respaldadas por un cinturón de verificación. Datos, no ruido."
   },
   "projects": {
     "title": "Mis Proyectos Seleccionados",
+    "iaMedia": "IA & Media",
     "mobileApps": "Aplicaciones Móviles",
     "softwareDevelopment": "Desarrollo de Software",
     "landingPages": "Landing Pages",

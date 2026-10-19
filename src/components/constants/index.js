@@ -1,5 +1,49 @@
 export const myProjects = [
   {
+    id: 7,
+    category: "iaMedia",
+    title: "TiraFactos",
+    subtitle: "Sello documental verificado con IA",
+    description:
+      "Estudio de contenido que investiga y narra historias reales de Colombia con un cinturón de verificación documental de cuatro niveles (V0-V3). Datos, no ruido.",
+    subDescription: [
+      "Pipeline editorial de 8 etapas: investigación, cinturón de verificación, guion, producción asistida con IA, edición y publicación multicanal.",
+      "Producción con IA generativa: imagen, voz narradora (TTS) y edición profesional en DaVinci Resolve.",
+      "Distribución en 5 plataformas con YouTube como hub: @tirafactos_co (YT, X), @tirafactos.co (TikTok, Instagram) y Facebook.",
+      "Infraestructura propia: dominio tirafactos.co (Cloudflare), repositorio del estudio versionado con Git y sistema de marca registrado en trámite.",
+    ],
+    href: "https://www.youtube.com/@tirafactos_co",
+    logo: "",
+    image: "/assets/projects/tirafactos.jpg",
+    tags: [
+      {
+        id: 1,
+        name: "IA Generativa",
+        path: "/assets/logos/ai-sparkle.svg",
+      },
+      {
+        id: 2,
+        name: "Documental",
+        path: "/assets/logos/documental-mic.svg",
+      },
+      {
+        id: 3,
+        name: "DaVinci Resolve",
+        path: "/assets/logos/clapperboard.svg",
+      },
+      {
+        id: 4,
+        name: "Cloudflare",
+        path: "/assets/logos/cloud.svg",
+      },
+      {
+        id: 5,
+        name: "Next.js",
+        path: "/assets/logos/nextjs-flat.svg",
+      },
+    ],
+  },
+  {
     id: 1,
     category: "mobileApps",
     title: "SuscriPago",
@@ -256,7 +300,7 @@ export const myProjects = [
   },
 ];
 
-export const projectCategories = ["mobileApps", "softwareDevelopment", "landingPages"];
+export const projectCategories = ["iaMedia", "mobileApps", "softwareDevelopment", "landingPages"];
 
 export const mySocials = [
   {

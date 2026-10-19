@@ -27,10 +27,13 @@
     "grid3Desc": "Based in Bogotá, Colombia — open to remote work worldwide",
     "grid4CTA": "Do you want to start a project together?",
     "grid5Title": "Tech Stack",
-    "grid5Desc": "I work with a variety of languages, frameworks, and tools that allow me to build robust and scalable applications"
+    "grid5Desc": "I work with a variety of languages, frameworks, and tools that allow me to build robust and scalable applications",
+    "grid6Title": "Founder of TiraFactos",
+    "grid6Desc": "My verified documentary seal: real Colombian stories backed by a fact-checking pipeline. Facts, not noise."
   },
   "projects": {
     "title": "My Selected Projects",
+    "iaMedia": "AI & Media",
     "mobileApps": "Mobile Apps",
     "softwareDevelopment": "Software Development",
     "landingPages": "Landing Pages",
